@@ -1,0 +1,42 @@
+{
+  "name": "zce-pages",
+  "version": "0.1.0",
+  "description": "Awesome node modules.",
+  "keywords": [
+    "zce-pages",
+    "zce"
+  ],
+  "repository": "pk-cat/zce-pages",
+  "license": "MIT",
+  "author": "jchen <865404776@qq.com> (https://github.com/pk-cat/zce-pages.git)",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "lint": "standard --fix",
+    "test": "jest --coverage",
+    "prepare": "npm run lint && npm run test"
+  },
+  "renovate": {
+    "extends": [
+      "zce"
+    ]
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "27.0.6",
+    "standard": "16.0.3"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
