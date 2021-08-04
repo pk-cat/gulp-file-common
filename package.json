@@ -12,7 +12,8 @@
   "main": "lib/index.js",
   "bin": "bin/zce-pages.js",
   "files": [
-    "lib"
+    "lib",
+    "bin"
   ],
   "scripts": {},
   "renovate": {
