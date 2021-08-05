@@ -8,7 +8,30 @@ npm i gulp-file-common
 
 ## Usage
 
-it used for bundle file(scripts, pages, styles and fonts)
+it used for bundling resources(scripts, pages, styles and fonts)
+
+if you want to use this package, you need add a config file for page(The sibling directory of package.json),  which called `pages.config.js`,
+in this file, it show the path of resources.
+
+here is example of this file:
+
+``` js
+module.exports = {
+  build: {
+    src: "src",
+    dist: "release",
+    temp: ".tmp",
+    public: "public",
+    paths: {
+      styles: "assets/styles/*.scss",
+      scripts: "assets/scripts/*.js",
+      pages: "**/*.html",
+      images: "assets/images/**",
+      fonts: "assets/fonts/**",
+    },
+  },
+}
+```
 
 ## API
 
