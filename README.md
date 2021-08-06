@@ -10,8 +10,7 @@ npm i gulp-file-common
 
 it used for bundling resources(scripts, pages, styles and fonts)
 
-if you want to use this package, you need add a config file for page(The sibling directory of package.json), which called `pages.config.js`,
-in this file, it show the path of resources.
+- if you want to use this package, you need add a config file (The sibling directory of package.json), which called `pages.config.js`. in this file, it show the path of resources.
 
 here is example of this file:
 
@@ -41,7 +40,7 @@ module.exports = {
 gulp-file-common clean
 ```
 
-remove bundle folder(.tmp and release)
+- remove bundle folder(.tmp and release)
 
 ### build
 
@@ -49,7 +48,7 @@ remove bundle folder(.tmp and release)
 gulp-file-common build
 ```
 
-bundle all resource(scripts, styles, fonts, pages) into folder(.tmp and release)
+- bundle all resource(scripts, styles, fonts, pages) into folder(.tmp and release)
 
 ### start
 
@@ -60,6 +59,36 @@ gulp-file-common start
 1. bundle some resource(scripts, styles, pages) into folder(.tmp)
 
 2. then add a web server to run your project in a browser(port: 3002)
+
+### use npm scripts
+
+- use gulp-file-common as cli command( you need add these command into npm scripts)
+
+```json
+  "scripts": {
+    "clean": "gulp-file-common clean",
+    "build": "gulp-file-common build",
+    "start": "gulp-file-common start"
+  },
+```
+
+- now you can run these command
+
+```shell
+npm run clean
+npm run build
+npm run start
+```
+
+### use npx
+
+- after you download `gulp-file-common` package, you can use npx run command directly
+
+```shell
+npx gulp-file-common clean
+npx gulp-file-common build
+npx gulp-file-common start
+```
 
 ## Related
 
