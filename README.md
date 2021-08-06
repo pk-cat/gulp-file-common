@@ -10,18 +10,18 @@ npm i gulp-file-common
 
 it used for bundling resources(scripts, pages, styles and fonts)
 
-if you want to use this package, you need add a config file for page(The sibling directory of package.json),  which called `pages.config.js`,
+if you want to use this package, you need add a config file for page(The sibling directory of package.json), which called `pages.config.js`,
 in this file, it show the path of resources.
 
 here is example of this file:
 
-``` js
+```js
 module.exports = {
   build: {
-    src: "src",
-    dist: "release",
-    temp: ".tmp",
-    public: "public",
+    src: "src", //your resources directory(need to be compressed and compiled, like styles file, scripts file, fonts and images)
+    dist: "release", //bundle file directory
+    temp: ".tmp", //temporary directory
+    public: "public", // your resources(no need to be compressed and compiled, like favicon.ico)
     paths: {
       styles: "assets/styles/*.scss",
       scripts: "assets/scripts/*.js",
@@ -30,7 +30,7 @@ module.exports = {
       fonts: "assets/fonts/**",
     },
   },
-}
+};
 ```
 
 ## API
