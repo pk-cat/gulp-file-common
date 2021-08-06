@@ -1,16 +1,16 @@
 {
   "name": "gulp-file-common",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "common config for gulp",
   "keywords": [
-    "zce-pages",
+    "gulp-file-common",
     "zce"
   ],
-  "repository": "pk-cat/zce-pages",
+  "repository": "pk-cat/gulp-file-common",
   "license": "MIT",
-  "author": "jchen <865404776@qq.com> (https://github.com/pk-cat/zce-pages.git)",
+  "author": "jchen <865404776@qq.com> (https://github.com/pk-cat/gulp-file-common)",
   "main": "lib/index.js",
-  "bin": "bin/zce-pages.js",
+  "bin": "bin/cli.js",
   "files": [
     "lib",
     "bin"
